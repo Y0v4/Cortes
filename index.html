@@ -1,28 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+    <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP</title>
+    <link rel="stylesheet" href="./style/styles.css">
 </head>
 <body>
-    <header class="head">
-        <section class="head-conteiner">
-            <h1 class="head-conteiner-tittle">Este es el header</h1>
-            <span class="head-conteiner-logo">
-                <img class="head-conteiner-logo-img" src="" alt="este es el logo">
-            </span>
-        </section>
-    </header>
-    <h1 class="titulo" >hola mundo
-        xd
-    </h1>
-    aljksfhaskfhakshfahsfklhakldfhlkasjhdfklaskldfkaskfnsafknkj
-    <footer>
-        esto es el final de la pagina
-    </footer>
+    <div class="titulo">
+        <header>
+            <h1>Dividiendo un cuadrado</h1>
+        </header><br>
+
+        <form action="" method="POST">
+            <p>Introdusca el perimetro del cuadrado a dividir<br>
+            Ancho: <input type="number"  id="anchoTotal"><br>
+            Largo: <input type="number" id="largoTotal"><br><br>
+            </p>
+            <p>Seleccione la cantidad de cortes que desea:
+                <select onchange="mostrarSelect()" id="select">
+                    <option disabled selected >Numero de cortes</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br><br>
+            </p>
+
+            <p class="resultado" id="opcion1">
+                Introdusca el perimetro del corte:<br>
+                Ancho: <input type="number" id="anchoCorte1"><br>
+                Largo: <input type="number" id="largoCorte1"><br>
+                Numero de cortes:<input type="number" id="numero1"><br><br>
+            </p>
+            <p class="resultado" id="opcion2">
+                Introdusca el perimetro del corte<br>
+                Ancho: <input type="number" id="anchoCorte2"><br>
+                Largo: <input type="number" id="largoCorte2"><br>
+                Numero de cortes:<input type="number" id="numero2"><br><br>
+            </p>
+            <p class="resultado" id="opcion3">
+                Introdusca el perimetro del corte<br>
+                Ancho: <input type="number" id="anchoCorte3"><br>
+                Largo: <input type="number" id="largoCorte3"><br>
+                Numero de cortes:<input type="number" id="numero3"><br><br>
+            </p>
+            <p class="resultado" id="opcion4">
+                Introdusca el perimetro del corte<br>
+                Ancho: <input type="number" id="anchoCorte4"><br>
+                Largo: <input type="number" id="largoCorte4"><br>
+                Numero de cortes:<input type="number" id="numero4"><br><br>
+            </p>
+            <p class="resultado" id="opcion5">
+                Introdusca el perimetro del corte<br>
+                Ancho: <input type="number" id="anchoCorte5"><br>
+                Largo: <input type="number" id="largoCorte5"><br>
+                Numero de cortes:<input type="number" id="numero5"><br><br>
+            </p>
+            <p>
+                <input type="button" value="A cortar" id="boton">
+            </p><br>
+        </form>
+
+    </div>
     
+    <div id="marcos">
+        <div id="dibujo"></div>
+        <!--marcos agregados en js-->
+    </div><br>
+   
+    <script src="app.js"></script>
 </body>
 </html>
